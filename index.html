@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelWild</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- nav bar and hero section  -->
+    <div class="navbar">
+        <label for="" class="logo">Travel<span class="color-text">Wild</span></label>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#book">Book</a></li>
+            <span class="dropdown">
+                <li class="dropbtn"><a href="#packages">Packages</a></li>
+                <div class="dropdown-content">
+                    <a href="#us">United States</a>
+                    <a href="#india">India</a>
+                    <a href="#france">France</a>
+                    <a href="#germany">Germany</a>
+                </div>
+            </span>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <div class="user-buttons">
+            <button type="button" class="nav-btn"><a href="login.html" style="text-decoration: none; color: white;">Login</a></button>
+            <button type="button" class="nav-btn"><a href="register.html" style="text-decoration: none; color: white;">Register</a></button>
+        </div>
+
+
+    </div>
+    <div class="banner" id="home">
+        <div class="content">
+            <h3>Welcome to Travel<span>Wild</span></h3>
+            <h1>Visit <span id="placeName"> Placename</span></h1>
+            <div>
+                <button type="button"><span class="rolling"></span>Book Now</button>
+            </div>
+        </div>
+    </div>
+    <!-- end of nav bar and hero section -->
+
+    <!-- form section -->
+
+    <h3 id="book">Book</h3>
+    <div class="container">
+        <div class="half-width">
+            <img src="images/contact-form-image.jpg" alt="Brand Image">
+        </div>
+        <div class="half-width">
+            <form id="bookingForm">
+                <label for="whereTo" class="input-label">Where to:</label>
+                <select class="input" id="whereTo" name="whereTo">
+                    <option value="place1">India</option>
+                    <option value="place2">France</option>
+                    <option value="place3">Germany</option>
+                    <option value="place4">United States</option>
+                    <option value="place5">Japan</option>
+                    <option value="place6">Australia</option>
+                </select><br>
+
+                <label for="personCount" class="input-label">How Many Person:</label>
+                <input type="number" class="input" id="personCount" name="personCount" min="1" required><br>
+
+                <label for="startDate" class="input-label">Start Date:</label>
+                <input type="date" class="input" id="startDate" name="startDate" min="" required><br>
+
+                <label for="endDate" class="input-label">End Date:</label>
+                <input type="date" class="input" id="endDate" name="endDate" min="" required><br>
+
+                <label for="description" class="input-label">Description:</label>
+                <textarea id="description" name="description" rows="5" cols="30" minlength="50" maxlength="500"
+                    required>
+                </textarea><br>
+
+                <button type="submit" class="btn" id="bookNow">Book Now</button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- end of form section -->
+
+    <!-- cards-sections -->
+    <h3 id="packages">Packages</h3>
+    <div class="package-section">
+
+        <div class="package-row">
+            <div class="package-card" id="india">
+                <img src="images/taj-mahal.jpg" alt="Place 1">
+                <h2>India</h2>
+                <p>Best tourist destinations in India include Taj Mahal, Red Fort, India Gate, Amber Palace , serene
+                    backwaters of Kerala.</p>
+                <p class="package-price">Price: $200</p>
+                <p>Rating: 4.5</p>
+                <button class="book-package btn">Book Now</button>
+            </div>
+
+            <div class="package-card" id="france">
+                <img src="images/eiffel-tower.jpg" alt="Place 1">
+                <h2>France</h2>
+                <p>Best tourist destinations in France: Eiffel Tower, Louvre Museum, Notre-Dame Cathedral, Mont
+                    Saint-Michel.</p>
+                <p class="package-price">Price: $100</p>
+                <p>Rating: 4.5</p>
+                <button class="book-package btn">Book Now</button>
+            </div>
+
+            <div class="package-card" id="germany">
+                <img src="images/germany.jpg" alt="Place 1">
+                <h2>Germany</h2>
+                <p>Best tourist destinations in Germany: Brandenburg Gate, Neuschwanstein Castle, Cologne Cathedral,
+                    Berlin Wall.</p>
+                <p class="package-price">Price: $100</p>
+                <p>Rating: 4.5</p>
+                <button class="book-package btn">Book Now</button>
+            </div>
+        </div>
+        <div class="package-row">
+            <div class="package-card">
+                <img src="images/australia.jpg" alt="Place 1">
+                <h2>Australia</h2>
+                <p>Best tourist destinations in Australia: Sydney Opera House, Great Barrier Reef, Uluru , Bondi Beach.
+                </p>
+                <p class="package-price">Price: $100</p>
+                <p>Rating: 4.5</p>
+                <button class="book-package btn">Book Now</button>
+            </div>
+
+            <div class="package-card">
+                <img src="images/japan.jpg" alt="Place 1">
+                <h2>Japan</h2>
+                <p>Best tourist destinations in Japan: Tokyo Tower, Kyoto's Kinkaku-ji, Mount Fuji, Nara Park.</p>
+                <p class="package-price">Price: $100</p>
+                <p>Rating: 4.5</p>
+                <button class="book-package btn">Book Now</button>
+            </div>
+
+            <div class="package-card" id="us">
+                <img src="images/new-york.jpg" alt="Place 1">
+                <h2>New York</h2>
+                <p>Best tourist destinations in New York (USA): Statue of Liberty, Central Park, Times Square, Empire
+                    State Building.</p>
+                <p class="package-price">Price: $100</p>
+                <p>Rating: 4.5</p>
+                <button class="book-package btn">Book Now</button>
+            </div>
+        </div>
+        <div class="package-row">
+            <div class="package-card">
+                <img src="images/china.jpg" alt="Place 1">
+                <h2>China</h2>
+                <p>Best tourist destinations in China: Great Wall of China, Forbidden City in Beijing, West Lake in
+                    Hangzhou.</p>
+                <p class="package-price">Price: $100</p>
+                <p>Rating: 4.5</p>
+                <button class="book-package btn">Book Now</button>
+            </div>
+
+            <div class="package-card">
+                <img src="images/thailand.jpg" alt="Place 1">
+                <h2>Thailand</h2>
+                <p>Best tourist destinations in Thailand: Grand Palace in Bangkok, Wat Pho, Chiang Mai's Old City, Phang
+                    Nga Bay.</p>
+                <p class="package-price">Price: $100</p>
+                <p>Rating: 4.5</p>
+                <button class="book-package btn">Book Now</button>
+            </div>
+
+            <div class="package-card">
+                <img src="images/switzerland.jpg" alt="Place 1">
+                <h2>Switzerland</h2>
+                <p>Best tourist destinations in Switzerland: The Matterhorn, Jungfraujoch, Lake Geneva, Interlaken.</p>
+                <p class="package-price">Price: $100</p>
+                <p>Rating: 4.5</p>
+                <button class="book-package btn">Book Now</button>
+            </div>
+        </div>
+    </div>
+    <!-- end of cards section -->
+
+    <!-- services section -->
+    <h3 id="services">Services</h3>
+    <div class="services-section">
+        <div class="service-card">
+            <img src="images/hotel.png" alt="phone">
+            <h4>Affordable Hotel</h4>
+            <p>Enjoy comfortable and affordable accommodation during your stay.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/food-drink.png" alt="phone">
+            <h4>Food & Drinks</h4>
+            <p>Explore a diverse range of delicious cuisines and refreshing drinks.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/safety-guide.png" alt="phone">
+            <h4>Safety Guide</h4>
+            <p>Our expert guides ensure your safety and security throughout the trip.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/transportation.png" alt="phone">
+            <h4>Transportation Services</h4>
+            <p>Efficient and reliable transportation to various destinations.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/adventure.png" alt="phone">
+            <h4>Adventure Activities</h4>
+            <p>Exciting adventure activities for adrenaline enthusiasts.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/assistance.png" alt="phone">
+            <h4>Tour Planning Assistance</h4>
+            <p>Expert guidance in planning customized tours for your preferences.</p>
+        </div>
+    </div>
+
+    <!-- end od services section -->
+
+    <!-- image gallery section -->
+    <h3 id="gallery">Gallery</h3>
+
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="images/slide-1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="images/slide-2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="images/slide-3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="images/slide-4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="images/slide-5.jpg" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <!-- end of image gallery section -->
+
+
+    <!-- about section -->
+    <h3 id="about">About Us</h3>
+    <div class="container about-us">
+        <div class="half-width">
+            <img src="images/eiffel-abou-us.jpg" alt="Brand Image">
+        </div>
+        <div class="half-width">
+            <div class="about-us-content">
+                <p>Established in 2010, TravelWild has been at the forefront of redefining travel experiences. Our
+                    company was born from a collective passion for exploration, aiming to revolutionize the way people
+                    perceive and engage with the world. With a commitment to authenticity, sustainability, and
+                    personalized service, we specialize in curating bespoke journeys that immerse travelers in diverse
+                    cultures, breathtaking landscapes, and unique adventures. As a leading travel agency, we take pride
+                    in creating memorable experiences that inspire a lifelong love for exploration.
+                </p>
+                <p>
+                    Over the years, TravelWild has evolved into more than a travel agency; we've become storytellers,
+                    crafting narratives of wanderlust and discovery. Embracing innovation and leveraging our extensive
+                    network of partners worldwide, we strive to offer unparalleled access to extraordinary destinations.
+                    Our dedication to responsible tourism drives us to collaborate with local communities, ensuring a
+                    positive impact while preserving the integrity of each place we visit. With a relentless pursuit of
+                    excellence, we invite you to embark on a transformative journey with us, where every adventure is
+                    infused with passion, purpose, and a sense of profound connection to the world around us.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- end of about section -->
+
+    <!-- footer section  -->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <label for="" class="logo">Travel<span class="color-text">Wild</span></label>
+            </div>
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-icon.png"></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-icon.png"></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://twitter.com/" target="_blank"><img src="images/twitter-icon.png"></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-icon.png"></a>
+                </div>
+            </div>
+            <p>Copyright © 2023 TravelWild. All rights reserved</p>
+        </div>
+    </section>
+    <!-- end of footer section  -->
+
+
+
+
+    <!-- javasrcipt code -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // change placenames
+        const placeNames = ["United States", "India", "France", "Germany", "Australia", "Japan"];
+        let currentIndex = 0;
+
+        function changePlaceName() {
+            document.getElementById("placeName").textContent = placeNames[currentIndex];
+            currentIndex = (currentIndex + 1) % placeNames.length;
+        }
+
+        setInterval(changePlaceName, 200);
+
+
+        // book now form
+        $(document).ready(function () {
+            $('#bookingForm').submit(function (event) {
+                event.preventDefault();
+
+                // Validation
+                if (this.checkValidity()) {
+                    alert("Booking successful");
+                } else {
+                    this.reportValidity();
+                }
+            });
+        });
+
+        // Set minimum value for Start Date as today's date
+        var today = new Date().toISOString().split('T')[0];
+        document.getElementById('startDate').min = today;
+
+        // Set minimum value for End Date as the selected Start Date
+        $('#startDate').change(function () {
+            document.getElementById('endDate').min = this.value;
+        });
+
+
+
+        // javascript for image slider
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+
+    </script>
+
+    <!-- end of javascript code -->
+</body>
+
+</html>

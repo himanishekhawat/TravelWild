@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelWild-Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="navbar">
+        <label for="" class="logo">Travel<span class="color-text">Wild</span></label>
+        <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#book">Book</a></li>
+            <span class="dropdown">
+                <li class="dropbtn"><a href="index.html#packages">Packages</a></li>
+                <div class="dropdown-content">
+                    <a href="index.html#us">United States</a>
+                    <a href="index.html#india">India</a>
+                    <a href="index.html#france">France</a>
+                    <a href="index.html#germany">Germany</a>
+                </div>
+            </span>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#about">About</a></li>
+        </ul>
+        <div class="user-buttons">
+            <button type="button" class="nav-btn"><a href="login.html"
+                    style="text-decoration: none; color: white;">Login</a></button>
+            <button type="button" class="nav-btn"><a href="register.html"
+                    style="text-decoration: none; color: white;">Register</a></button>
+        </div>
+
+
+    </div>
+
+    <!-- login page -->
+    <div class="login-form-container">
+        <h2>Register Form</h2>
+
+        <form id="LoginForm">
+
+            <label for="fullname" class="input-label">Enter Full name:</label>
+            <input type="text" class="input" id="fullname" name="fullname" required><br>
+
+            <label for="contact" class="input-label">Enter Phone no:</label>
+            <input type="tel" class="input" id="contact" name="contact" required><br>
+
+            <label for="dob" class="input-label">Enter D.O.B:</label>
+            <input type="date" class="input" id="dob" name="dob" min="" required><br>
+
+            <label for="gender" class="input-label">Choose gender</label>
+                <select class="input" id="gender" name="gender">
+                    <option value="place1">Male</option>
+                    <option value="place2">Female</option>
+                    <option value="place3">Other</option>
+                </select><br>
+
+            <label for="email" class="input-label">Enter Email:</label>
+            <input type="email" class="input" id="email" name="email" required><br>
+
+            <label for="password" class="input-label">Password:</label>
+            <input type="password" class="input" id="password" name="password" required><br>
+
+            <button type="submit" class="btn" id="bookNow">Register</button><br>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </form>
+    </div>
+
+
+    <!-- footer -->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <label for="" class="logo">Travel<span class="color-text">Wild</span></label>
+            </div>
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-icon.png"></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-icon.png"></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://twitter.com/" target="_blank"><img src="images/twitter-icon.png"></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-icon.png"></a>
+                </div>
+            </div>
+            <p>Copyright © 2023 TravelWild. All rights reserved</p>
+        </div>
+    </section>
+
+
+
+    <!-- JavaScript for form validation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("LoginForm").addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                // Validation
+                const fullname = document.getElementById("fullname").value.trim();
+                const contact = document.getElementById("contact").value.trim();
+                const dob = document.getElementById("dob").value;
+                const email = document.getElementById("email").value.trim();
+                const password = document.getElementById("password").value;
+
+                if (fullname === "" || contact === "" || dob === "" || email === "" || password === "") {
+                    alert("Please fill in all the required fields.");
+                    return;
+                }
+
+                // Additional validation if needed
+
+                // Submit the form if validation passes
+                alert("Registration successful");
+                this.reset(); // Reset the form after successful submission
+            });
+        });
+    </script>
+    <!-- End of JavaScript code -->
+</body>
+
+</html>
